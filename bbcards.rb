@@ -301,7 +301,7 @@ def render_card_page(pdf, card_geometry, icon, statements, is_black)
 	
 			#pick 3
 			if is_pick3
-				pdf.text_box "PICK", size:11, align: :right, width:30, at: [pdf.bounds.right-50,pdf.bounds.bottom+20]
+				pdf.text_box "SCEGLI", size:11, align: :right, width:30, at: [pdf.bounds.right-50,pdf.bounds.bottom+20]
 				pdf.fill_and_stroke(:fill_color=>"ffffff", :stroke_color=>"ffffff") do
 					pdf.circle([pdf.bounds.right-10,pdf.bounds.bottom+15.5],7.5)
 				end
@@ -312,7 +312,7 @@ def render_card_page(pdf, card_geometry, icon, statements, is_black)
 				pdf.fill_color "ffffff"
 
 
-				pdf.text_box "DRAW", size:11, align: :right, width:35, at: [pdf.bounds.right-55,pdf.bounds.bottom+40]
+				pdf.text_box "PESCA", size:11, align: :right, width:35, at: [pdf.bounds.right-55,pdf.bounds.bottom+40]
 				pdf.fill_and_stroke(:fill_color=>"ffffff", :stroke_color=>"ffffff") do
 					pdf.circle([pdf.bounds.right-10,pdf.bounds.bottom+35.5],7.5)
 				end
